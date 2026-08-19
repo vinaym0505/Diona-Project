@@ -1,0 +1,68 @@
+/* Print Stylesheet for WCB Manitoba Dynamic Forms */
+
+@page {
+  size: A4 portrait;
+  margin: 10mm;
+}
+
+@media print {
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .app-chrome,
+  .site-header,
+  .dataset-switcher,
+  .print-button,
+  .stats-bar,
+  nav,
+  .no-print {
+    display: none !important;
+  }
+
+  .document-container {
+    padding: 0 !important;
+    gap: 0 !important;
+  }
+
+  .page {
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 8mm 10mm !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 275mm !important;
+    page-break-after: always !break;
+    break-after: page;
+  }
+
+  .page:last-child {
+    page-break-after: auto !important;
+    break-after: auto !important;
+  }
+
+  tr, .wcb-table-row, .wcb-section-box {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+}
+
+/* Screen Preview A4 Page styling */
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 12mm 14mm;
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11pt;
+  line-height: 1.35;
+}

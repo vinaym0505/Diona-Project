@@ -1,0 +1,198 @@
+/* Worker Progress Report - PDF-Faithful WCB Styling */
+
+.wcb-form {
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  line-height: 1.35;
+}
+
+/* WCB Header Block */
+.wcb-header-grid {
+  display: grid;
+  grid-template-columns: 100px 1fr 140px;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.wcb-header-logo img {
+  width: 90px;
+  height: auto;
+}
+
+.wcb-header-address {
+  font-size: 8.5pt;
+  line-height: 1.2;
+  color: #111111;
+}
+
+.wcb-header-title-box {
+  text-align: right;
+}
+
+.wcb-form-title {
+  font-family: 'Noto Serif', Georgia, serif;
+  font-size: 15pt;
+  font-weight: 700;
+  color: #003366;
+  margin: 0 0 4px 0;
+  line-height: 1.1;
+}
+
+.wcb-claim-num {
+  font-size: 10pt;
+  font-weight: 700;
+  color: #000000;
+}
+
+.wcb-badge-wp {
+  display: inline-block;
+  background-color: #003366;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 9pt;
+  padding: 1px 6px;
+  border-radius: 2px;
+  margin-left: 6px;
+}
+
+/* Section Header Bar */
+.wcb-section-title {
+  font-family: 'Noto Serif', Georgia, serif;
+  font-size: 11pt;
+  font-weight: 700;
+  color: #000000;
+  border-bottom: 1.5px solid #000000;
+  padding-bottom: 3px;
+  margin-top: 14px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+/* Form Fields & Radio Groups */
+.wcb-intro-text {
+  font-size: 9.5pt;
+  margin-bottom: 10px;
+  color: #111111;
+}
+
+.wcb-radio-group-label {
+  font-weight: 700;
+  font-size: 9.5pt;
+  margin-bottom: 4px;
+  color: #000000;
+}
+
+.wcb-radio-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 9.5pt;
+  margin-bottom: 4px;
+  line-height: 1.25;
+}
+
+.wcb-glyph {
+  font-family: monospace, sans-serif;
+  font-size: 11pt;
+  font-weight: 700;
+  line-height: 1;
+  color: #000000;
+  user-select: none;
+}
+
+.wcb-glyph.checked {
+  color: #003366;
+}
+
+/* Dark Blue Dynamic Value Formatting */
+.wcb-dynamic-value {
+  color: #003366;
+  font-weight: 600;
+}
+
+.wcb-inline-field {
+  margin-bottom: 6px;
+  font-size: 9.5pt;
+}
+
+/* Textarea / Boxed Comment Fields */
+.wcb-boxed-field {
+  border: 1px solid #000000;
+  padding: 6px 8px;
+  min-height: 38px;
+  margin-top: 3px;
+  margin-bottom: 8px;
+  background-color: #fafafa;
+  font-size: 9.5pt;
+}
+
+.wcb-boxed-field-label {
+  font-weight: 700;
+  font-size: 9pt;
+  color: #000000;
+  margin-bottom: 2px;
+}
+
+/* Pain Scale Grid (1 to 10) */
+.wcb-pain-scale-container {
+  margin: 10px 0 14px 0;
+}
+
+.wcb-pain-scale-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.wcb-pain-score-box {
+  border: 1px solid #000000;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 10pt;
+  font-weight: 700;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.wcb-pain-score-box.active {
+  background-color: #003366;
+  color: #ffffff;
+  border-color: #003366;
+  box-shadow: 0 0 0 2px #000000;
+}
+
+/* Certification Legal Box */
+.wcb-certification-box {
+  border: 1px solid #000000;
+  padding: 12px 14px;
+  margin-top: 14px;
+  font-size: 9pt;
+  line-height: 1.4;
+  background-color: #ffffff;
+}
+
+.wcb-certification-text {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+/* Document Page Footer */
+.wcb-footer {
+  position: absolute;
+  bottom: 8mm;
+  left: 14mm;
+  right: 14mm;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #000000;
+  padding-top: 6px;
+  font-size: 8pt;
+  color: #333333;
+}

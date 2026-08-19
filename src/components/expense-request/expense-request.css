@@ -1,0 +1,94 @@
+/* Expense Request Form - PDF-Faithful WCB Styling */
+
+.expense-form {
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9.5pt;
+  line-height: 1.3;
+}
+
+.expense-section {
+  margin-bottom: 14px;
+}
+
+.expense-section-header {
+  font-family: 'Noto Serif', Georgia, serif;
+  font-size: 10.5pt;
+  font-weight: 700;
+  color: #003366;
+  margin: 12px 0 4px 0;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 2px;
+}
+
+.expense-section-intro {
+  font-size: 8.5pt;
+  font-style: italic;
+  color: #333333;
+  margin-bottom: 4px;
+}
+
+.expense-section-footnote {
+  font-size: 8pt;
+  font-style: italic;
+  color: #444444;
+  margin-top: 3px;
+}
+
+/* Form Semantic Table Styling */
+.wcb-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 4px;
+  font-size: 8.5pt;
+}
+
+.wcb-table th {
+  background-color: #f1f5f9;
+  color: #000000;
+  font-weight: 700;
+  text-align: left;
+  padding: 5px 6px;
+  border: 1px solid #000000;
+  font-size: 8.5pt;
+  line-height: 1.2;
+}
+
+.wcb-table td {
+  padding: 5px 6px;
+  border: 1px solid #000000;
+  vertical-align: top;
+  line-height: 1.25;
+  word-break: break-word;
+}
+
+.wcb-table td.dynamic-val {
+  color: #003366;
+  font-weight: 600;
+}
+
+.wcb-table tr.empty-row td {
+  text-align: center;
+  color: #64748b;
+  font-style: italic;
+  padding: 8px;
+  background-color: #fafafa;
+}
+
+/* Privacy Consent Block */
+.privacy-consent-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #000000;
+  padding: 8px 10px;
+  margin-top: 16px;
+  background-color: #ffffff;
+  font-size: 9pt;
+  font-weight: 600;
+}
+
+.privacy-consent-box a {
+  color: #003366;
+  text-decoration: underline;
+}
