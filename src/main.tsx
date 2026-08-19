@@ -1,9 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import Hero31 from './index';
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+export default function Demo() {
+  return (
+    <div className="h-screen w-full">
+      <Hero31
+        logoText="Watermelon"
+        navItems={['Product', 'About Us', 'Features', 'FAQ', 'Contact']}
+        signUpText="Sign up"
+        title="Innovation that Drives Impact."
+        subtitle="Watermelon empowers teams to build, scale, and transform with technology that drives real results."
+        ctaText="Request a Demo"
+        trustedByText="TRUSTED BY AMBITIOUS TEAMS"
+        backgroundImage="https://assets.watermelon.sh/hero-31-bg.avif"
+      />
+    </div>
+  );
+}
