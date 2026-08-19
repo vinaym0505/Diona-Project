@@ -1,4 +1,5 @@
 import React, { useState, useLayoutEffect, useRef, useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import { expenseRequestDatasets } from '../../data/expenseRequestDatasets';
 import { ExpenseRequestDataset, DocumentStats, PrescriptionExpense, OtcExpense, MedicalSupplyExpense, ParkingExpense, MileageExpense, BusTaxiExpense } from '../../lib/types';
 import { paginateBlocks, A4_PAGE_HEIGHT_PX } from '../../lib/paginate';
@@ -132,19 +133,25 @@ export const ExpenseRequestDocument: React.FC = () => {
   }, [dataset]);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       
-      {/* Chrome Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+      {/* Workspace Top Bar */}
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
         <div>
-          <h1 className="text-2xl font-bold text-slate-100 tracking-tight flex items-center gap-2">
+          <Link
+            to="/"
+            className="inline-flex items-center gap-1.5 text-xs font-semibold text-indigo-400 hover:text-indigo-300 transition-colors mb-2"
+          >
+            <span>← Back to Documents</span>
+          </Link>
+          <h1 className="text-3xl font-extrabold text-slate-100 tracking-tight flex items-center gap-3 font-sans">
             Medical & Travel Expense Request
-            <span className="text-xs bg-amber-500/20 text-amber-400 font-semibold px-2.5 py-0.5 rounded-full border border-amber-500/30">
-              Exercise 2
+            <span className="text-xs bg-amber-500/15 text-amber-400 font-bold uppercase tracking-wider px-3 py-1 rounded-full border border-amber-500/30">
+              Expense Form
             </span>
           </h1>
-          <p className="text-xs text-slate-400">
-            Workers Compensation Board of Manitoba · Expense Claim
+          <p className="text-xs text-slate-400 mt-1">
+            Workers Compensation Board of Manitoba · Exercise 2
           </p>
         </div>
 

@@ -1,4 +1,5 @@
 import React, { useState, useLayoutEffect, useRef, useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import { workerProgressDatasets } from '../../data/workerProgressDatasets';
 import { WorkerProgressDataset, DocumentStats } from '../../lib/types';
 import { paginateBlocks, A4_PAGE_HEIGHT_PX } from '../../lib/paginate';
@@ -86,19 +87,25 @@ export const WorkerProgressDocument: React.FC = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       
-      {/* Chrome Top Bar */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+      {/* Workspace Top Bar */}
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
         <div>
-          <h1 className="text-2xl font-bold text-slate-100 tracking-tight flex items-center gap-2">
+          <Link
+            to="/"
+            className="inline-flex items-center gap-1.5 text-xs font-semibold text-indigo-400 hover:text-indigo-300 transition-colors mb-2"
+          >
+            <span>← Back to Documents</span>
+          </Link>
+          <h1 className="text-3xl font-extrabold text-slate-100 tracking-tight flex items-center gap-3 font-sans">
             Worker Progress Report
-            <span className="text-xs bg-blue-500/20 text-blue-400 font-semibold px-2.5 py-0.5 rounded-full border border-blue-500/30">
-              Exercise 1
+            <span className="text-xs bg-emerald-500/15 text-emerald-400 font-bold uppercase tracking-wider px-3 py-1 rounded-full border border-emerald-500/30">
+              Form WP
             </span>
           </h1>
-          <p className="text-xs text-slate-400">
-            Workers Compensation Board of Manitoba · Form WP
+          <p className="text-xs text-slate-400 mt-1">
+            Workers Compensation Board of Manitoba · Exercise 1
           </p>
         </div>
 
